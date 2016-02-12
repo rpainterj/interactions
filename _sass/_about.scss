@@ -1,0 +1,35 @@
+.about-flightpath{
+	border-bottom: 2px dashed $blue;
+	padding: 2rem 5%;
+	max-width: 600px;
+	margin: 2rem auto 4rem auto;
+
+	p{font-family: 'Cabin', sans-serif;}
+}
+
+.about-header{
+	font-family: 'Oleo Script', sans-serif;
+	font-weight: normal;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.contact{
+	text-align: center;
+	.address{font-size: 2rem;}
+	
+	a{
+		font-size: 2rem;
+		color: $turquoise;
+		font-family: 'Cabin', sans-serif;
+	}
+}
+
+.about-image{
+	background: url('/images/about-image.jpg') center center;
+	background-size: cover;
+	padding: 2rem 5%;
+	height: 200px;
+	max-width: 600px;
+	margin: 2rem auto 4rem auto;
+}
