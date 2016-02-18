@@ -421,6 +421,24 @@ html {
  * }
  *
  */
+.standard {
+  font-size: 2.2rem;
+  color: rgba(0, 0, 0, 0.9); }
+
+.body-text {
+  font-size: 2.2rem;
+  color: rgba(0, 0, 0, 0.9);
+  max-width: 60rem;
+  margin: 0 auto; }
+
+.divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 4rem 0; }
+
+.large-divider {
+  height: 80rem; }
+
 * {
   box-sizing: border-box; }
 
@@ -430,12 +448,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  position: relative;
-  background-color: #FCE38A; }
+  position: relative; }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-family: sans-serif;
-  color: #0E5F76;
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: Helvetica, sans-serif;
   font-weight: normal; }
 
 li {
@@ -450,186 +466,108 @@ p {
   font-size: 2rem;
   line-height: 1.6em; }
 
-.logo {
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: grey; }
-  .logo:hover {
-    -webkit-transform: translateY(-0.2rem);
-    -moz-transform: translateY(-0.2rem);
-    -ms-transform: translateY(-0.2rem);
-    -o-transform: translateY(-0.2rem);
-    transform: translateY(-0.2rem); }
-  .logo:active {
-    -webkit-transform: translateY(0.2rem);
-    -moz-transform: translateY(0.2rem);
-    -ms-transform: translateY(0.2rem);
-    -o-transform: translateY(0.2rem);
-    transform: translateY(0.2rem); }
-
 #title {
-  font-size: 6rem;
-  text-align: center;
-  font-family: "Oleo Script";
-  font-weight: normal;
-  padding-top: .1rem; }
+  font-size: 4rem;
+  text-align: center; }
 
 .nav-list {
   padding: 0;
-  margin: 0 10%; }
-  @media screen and (min-width: 800px) {
-    .nav-list {
-      margin: 0 25%; } }
+  text-align: center; }
 
 .nav-list li {
-  display: inline-block; }
-
-.nav-list a {
   display: inline-block;
-  width: 32%;
-  font-size: 2.2rem;
-  text-align: center;
-  font-family: 'Cabin';
-  padding: 1rem 0;
-  border: 2px solid #f4fefd;
-  color: #0E5F76; }
-  .nav-list a:hover {
-    border-bottom: 2px solid #0E5F76; }
+  margin: 1rem;
+  text-align: center; }
 
 .nav-active {
-  color: #0E5F76; }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9); }
 
-#home-wrapper {
-  margin: 0 2%;
-  background-color: #f4fefd;
-  padding-top: .1rem; }
-  @media screen and (min-width: 800px) {
-    #home-wrapper {
-      margin: 0 8%;
-      border-radius: 8rem;
-      margin-top: 2rem; } }
+#menu-1 {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  margin: 0 auto; }
+  #menu-1 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-1 li {
+    border-bottom: 1px solid #ccc; }
+  #menu-1 li:last-child {
+    border: none; }
+  #menu-1 a {
+    display: block;
+    transition: font-size 0.2s ease, background-color 0.2s ease;
+    padding: .5rem; }
+  #menu-1 li:hover {
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.05); }
 
-.main-background {
-  background-image: url("/images/Flightpath-Dripstr-1.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: auto;
-  margin: 2rem auto;
-  outline: 2px dashed #f4fefd;
-  border: 1px solid #f4fefd;
-  outline-offset: -20px; }
-  @media screen and (min-width: 800px) {
-    .main-background {
-      width: 75%;
-      max-width: 900px; } }
-  .main-background h2 {
-    font-size: 8rem;
-    color: #f4fefd;
-    font-family: 'Oleo Script', sans-serif;
-    margin-left: 2rem;
-    margin-top: 9rem;
-    text-shadow: 2px 2px #083D56; }
-
-#pop-up {
-  width: 100%;
-  height: 40rem; }
-  #pop-up::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (min-width: 600px) {
-    #pop-up {
-      max-width: 75%;
-      margin: 0 auto; } }
-
-#hours {
-  font-size: 2.4rem;
-  font-family: 'Cabin', sans-serif;
-  text-align: center;
-  margin: 5rem 2rem 7rem;
-  color: #0E5F76; }
-
-.phone {
-  font-size: 4rem;
-  font-family: 'Oleo Script', sans-serif;
-  text-align: center; }
-
-.about-section {
-  border-bottom: 2px dashed #083D56;
-  padding: 2rem 5%;
-  max-width: 600px;
-  margin: 2rem auto 4rem auto; }
-  .about-section p {
-    font-family: 'Cabin', sans-serif; }
-
-.menu-title {
-  font-size: 3rem;
-  font-family: 'Oleo Script', sans-serif;
-  text-align: center; }
-
-h2 {
-  font-size: 3rem;
-  font-family: 'Cabin', sans-serif; }
-
-.food-section, .sweet-section {
-  padding: 0 5%;
+#menu-2 {
+  font-size: 2.2rem;
+  max-width: 60rem;
   margin: 0 auto;
-  max-width: 600px; }
+  background-color: #ff4136;
+  max-width: 40rem;
+  padding: 2rem; }
+  #menu-2 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-2 a {
+    display: block; }
+  #menu-2 li {
+    margin-bottom: 1rem; }
+  #menu-2 a {
+    color: #fefaf0;
+    border: 2px solid #fefaf0;
+    padding: 3px;
+    transition: color .1s ease, background-color .1s ease; }
+  #menu-2 a:hover {
+    color: #ff4136;
+    background-color: #fefaf0; }
 
-.menu-options {
-  padding: 0;
-  list-style-type: none; }
-
-.menu-item::after {
-  clear: both;
-  content: "";
-  display: table; }
-.menu-item h5 {
-  font-size: 2rem;
-  display: inline;
-  font-family: 'Cabin', sans-serif; }
-.menu-item .item {
-  float: left; }
-.menu-item .price {
-  float: right; }
-.menu-item span {
-  clear: both;
-  font-family: 'Cabin', sans-serif;
-  float: left;
-  font-size: 1.6rem;
-  color: #0E5F76; }
-
-.about-flightpath {
-  border-bottom: 2px dashed #083D56;
-  padding: 2rem 5%;
-  max-width: 600px;
-  margin: 2rem auto 4rem auto; }
-  .about-flightpath p {
-    font-family: 'Cabin', sans-serif; }
-
-.about-header {
-  font-family: 'Oleo Script', sans-serif;
-  font-weight: normal;
+#menu-3 {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  margin: 0 auto;
   text-align: center;
-  font-size: 3rem; }
+  max-width: 100rem;
+  background-color: #4CAF50;
+  padding: 5rem; }
+  #menu-3 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-3 a {
+    display: block; }
+  #menu-3 li {
+    display: inline-block; }
+  #menu-3 a {
+    display: inline-block;
+    color: #fff;
+    padding: 1rem;
+    border-right: 1px solid #fff; }
+  #menu-3 li:hover {
+    background-image: repeating-linear-gradient(30deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 15px, transparent 0, transparent 30px); }
+  #menu-3 li:last-child a {
+    border-right: none; }
 
-.contact {
-  text-align: center; }
-  .contact .address {
-    font-size: 2rem; }
-  .contact a {
-    font-size: 2rem;
-    color: #0E5F76;
-    font-family: 'Cabin', sans-serif; }
-
-.about-image {
-  background: url("/images/about-image.jpg") center center;
-  background-size: cover;
-  padding: 2rem 5%;
-  height: 200px;
-  max-width: 600px;
-  margin: 2rem auto 4rem auto; }
+#menu-4 {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: left;
+  border-left: 2px solid rgba(0, 0, 0, 0.9);
+  max-width: 300px; }
+  #menu-4 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-4 a {
+    display: block; }
+  #menu-4 li {
+    transform: rotate(-25deg);
+    transition: transform 2s ease; }
+    #menu-4 li:hover {
+      transform: rotate(-15deg); }
+  #menu-4 a {
+    padding: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

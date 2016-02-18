@@ -1,4 +1,16 @@
 //Animations//
+@mixin menu{
+    font-size: 2.2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    a{display: block;}
+}
 
 @keyframes slidein {
   from {

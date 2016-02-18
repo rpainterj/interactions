@@ -2,55 +2,23 @@
 
 }
 
-.logo{
-	display: block;
-	width: 100px;
-	height: 100px;
-	background-color: grey;
-	@include huhver;
-}
-
 #title{
-	font-size: 6rem;
+	font-size: 4rem;
 	text-align: center;
-	font-family: "Oleo Script";
-	font-weight: normal;
-	padding-top: .1rem;
 }
 
 .nav-list{
 	padding: 0;
-	margin: 0 10%;
-	@include media(800px){
-		margin: 0 25%;
-	}
+	text-align: center;
 }
 
 .nav-list li{
 	display: inline-block;
-	
-}
-
-.nav-list a{
-	display:inline-block;
-	width: 32%;
-	font-size: 2.2rem;
+	margin: 1rem;
 	text-align: center;
-	font-family: 'Cabin';
-	padding: $padding-1 0;
-	border: 2px solid #f4fefd;
-	color: $turquoise;
-
-	&:hover{
-		border-bottom: 2px solid $turquoise;
-		
-	}
 }
 
-
-.nav-active{
-    color: $turquoise;
-}
+.nav-active{border-bottom: 1px solid $black;}
 
 
 
