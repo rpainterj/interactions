@@ -428,6 +428,8 @@ html {
   color: rgba(0, 0, 0, 0.9);
   max-width: 60rem;
   margin: 0 auto; }
+  .body-text a {
+    font-weight: bold; }
 
 .divider {
   height: 1px;
@@ -484,7 +486,8 @@ p {
   font-size: 2.2rem;
   max-width: 60rem;
   margin: 0 auto;
-  height: 200px; }
+  height: 200px;
+  text-align: right; }
   #menu-1 ul {
     margin: 0;
     padding: 0; }
@@ -496,7 +499,7 @@ p {
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.05); }
   #menu-1 a {
-    color: white;
+    color: black;
     display: block;
     transition: font-size 0.2s ease, background-color 0.2s ease;
     padding: .5rem; }
@@ -673,17 +676,18 @@ p {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #ffc107 0%, #ffeb3b 100%);
   font-size: 8rem;
-  border: 8px solid black;
-  width: auto; }
+  width: auto;
+  text-align: center;
+  border: 8px solid #FFC107; }
   #menu-9 ul {
     margin: 0;
     padding: 0; }
   #menu-9 a {
     display: block; }
   #menu-9 a {
-    color: white;
-    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, -2px -2px 2rem #ffdb6d, -1px -1px 1rem #ffe7a0, -1px -1px 0.5rem #ffe7a0; }
+    color: white; }
     #menu-9 a:hover {
+      text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, -2px -2px 2rem #ffdb6d, -1px -1px 1rem #ffe7a0, -1px -1px 0.5rem #ffe7a0;
       background-color: black; }
 
 /*# sourceMappingURL=main.css.map */
