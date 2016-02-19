@@ -84,10 +84,13 @@
 
 	li{
 		transform: rotate(-25deg);
-		transition: transform 2s ease;
+		transition: transform 1s ease;
 
 		&:hover{
 			transform: rotate(-15deg);
+		}
+		&:active{
+			transform: scale(2);
 		}
 
 	}
@@ -96,6 +99,60 @@
 		padding: 1rem;
 	}
 
+}
+
+#menu-5{
+	@include menu;
+	max-width: 900px;
+	
+
+	li{
+		display:inline-block;
+		background-color: $black;
+		color: #eee;
+		border-radius: 5px;
+		border: 1px solid $black;
+		transition: transform .2s ease-out;	
+
+		&:hover{
+			background-color: black;
+			transform: scale(1.5);
+			border: 1px solid #fff;
+		}
+	}
+
+	a{
+		display:block;
+		padding: .8rem 2.2rem;
+	}
+
+}
+
+#menu-6{
+	@include menu;
+	background-color: $cyan;
+	font-size: 2.6rem;
+	padding: 2rem;
+	max-width: 90rem;
+	text-align: center;
+	border: 2px solid $orange;
+	box-shadow: inset 0 0 1rem $orange, inset 0 0 2rem $orange;
+
+	li{
+		display: inline-block;
+		margin: 2rem 3rem;
+	}
+
+	a{
+		color: #fff;
+		transition: .1s;
+		text-shadow: 0 0 1rem $orange, 0 0 .1rem $orange, 0 0 .5rem $orange,
+		0 0 5rem $orange, 0 0 2rem $orange;
+	}
+
+	a:hover{
+		text-shadow: 0 0 1rem #fff, 0 0 .2rem #fff;
+	}
 }
 
 
