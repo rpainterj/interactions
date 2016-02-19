@@ -181,7 +181,7 @@
 	width: auto;
 
 	a{
-		font-family: "jaf-bernino-sans", Helvetica;
+		font-family: Helvetica;
 		color: white;
 		text-shadow: text-retro(), 0 0 1rem black;
 		&:hover{background-color: black;}
@@ -198,7 +198,7 @@ background: linear-gradient(to right, rgba(255,193,7,1) 0%,rgba(255,235,59,1) 10
 	// border: 8px solid black;
 	width: auto;
 	text-align: center;
-	border: 8px solid $amber;
+	
 
 	a{	
 		color: white;		

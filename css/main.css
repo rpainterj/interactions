@@ -660,7 +660,7 @@ p {
   #menu-8 a {
     display: block; }
   #menu-8 a {
-    font-family: "jaf-bernino-sans", Helvetica;
+    font-family: Helvetica;
     color: white;
     text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 0 0 1rem black; }
     #menu-8 a:hover {
@@ -678,8 +678,7 @@ p {
   background: linear-gradient(to right, #ffc107 0%, #ffeb3b 100%);
   font-size: 8rem;
   width: auto;
-  text-align: center;
-  border: 8px solid #FFC107; }
+  text-align: center; }
   #menu-9 ul {
     margin: 0;
     padding: 0; }
