@@ -198,7 +198,7 @@ background: linear-gradient(to right, rgba(255,193,7,1) 0%,rgba(255,235,59,1) 10
 	width: auto;
 
 	li{color: white;}
-	a{
+	a{	color: white;
 		text-shadow: text-retro(black, 4), -2px -2px 2rem lighten($amber, 20%),
 		 -1px -1px 1rem lighten($amber, 30%), -1px -1px .5rem lighten($amber,30%);
 		&:hover{background-color: black;}
