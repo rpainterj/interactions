@@ -363,13 +363,11 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-@keyframes slidein {
+@keyframes menu-7-animation {
   from {
-    margin-left: 100%;
-    width: 300%; }
+    margin-left: 0; }
   to {
-    margin-left: 0%;
-    width: 100%; } }
+    margin-left: .4rem; } }
 .spacer {
   height: 10rem;
   width: auto; }
@@ -485,7 +483,8 @@ p {
 #menu-1 {
   font-size: 2.2rem;
   max-width: 60rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 200px; }
   #menu-1 ul {
     margin: 0;
     padding: 0; }
@@ -564,7 +563,7 @@ p {
     display: block; }
   #menu-4 li {
     transform: rotate(-25deg);
-    transition: transform 1s ease; }
+    transition: transform .4s ease; }
     #menu-4 li:hover {
       transform: rotate(-15deg); }
     #menu-4 li:active {
@@ -603,11 +602,12 @@ p {
   margin: 0 auto;
   background-color: #00BCD4;
   font-size: 2.6rem;
-  padding: 2rem;
+  padding: 1rem;
   max-width: 90rem;
   text-align: center;
   border: 2px solid #FF5722;
-  box-shadow: inset 0 0 1rem #FF5722, inset 0 0 2rem #FF5722; }
+  box-shadow: inset 0 0 1rem white, inset 0 0 2rem white;
+  outline: 1rem solid #00BCD4; }
   #menu-6 ul {
     margin: 0;
     padding: 0; }
@@ -622,5 +622,69 @@ p {
     text-shadow: 0 0 1rem #FF5722, 0 0 0.1rem #FF5722, 0 0 0.5rem #FF5722, 0 0 5rem #FF5722, 0 0 2rem #FF5722; }
   #menu-6 a:hover {
     text-shadow: 0 0 1rem #fff, 0 0 .2rem #fff; }
+
+#menu-7 {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #FFC107;
+  background-image: repeating-linear-gradient(75deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06) 15px, transparent 0, transparent 30px); }
+  #menu-7 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-7 a {
+    display: block; }
+  #menu-7 li {
+    color: white; }
+  #menu-7 a {
+    display: inline-block;
+    padding: 1rem 0;
+    animation: 2s infinite alternate menu-7-animation; }
+
+#menu-8 {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  background: #03A9F4;
+  font-size: 8rem;
+  border: 8px solid black;
+  width: auto; }
+  #menu-8 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-8 a {
+    display: block; }
+  #menu-8 li {
+    color: white; }
+  #menu-8 a {
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 0 0 1rem black; }
+    #menu-8 a:hover {
+      background-color: black; }
+
+#menu-9 {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  background: #FFC107;
+  background: -moz-linear-gradient(left, #ffc107 0%, #ffeb3b 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffc107 0%, #ffeb3b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffc107 0%, #ffeb3b 100%);
+  font-size: 8rem;
+  border: 8px solid black;
+  width: auto; }
+  #menu-9 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-9 a {
+    display: block; }
+  #menu-9 li {
+    color: white; }
+  #menu-9 a {
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, -2px -2px 2rem #ffdb6d, -1px -1px 1rem #ffe7a0, -1px -1px 0.5rem #ffe7a0; }
+    #menu-9 a:hover {
+      background-color: black; }
 
 /*# sourceMappingURL=main.css.map */
