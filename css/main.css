@@ -492,13 +492,14 @@ p {
     border-bottom: 1px solid #ccc; }
   #menu-1 li:last-child {
     border: none; }
-  #menu-1 a {
-    display: block;
-    transition: font-size 0.2s ease, background-color 0.2s ease;
-    padding: .5rem; }
   #menu-1 li:hover {
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.05); }
+  #menu-1 a {
+    color: white;
+    display: block;
+    transition: font-size 0.2s ease, background-color 0.2s ease;
+    padding: .5rem; }
 
 #menu-2 {
   font-size: 2.2rem;
@@ -569,7 +570,8 @@ p {
     #menu-4 li:active {
       transform: scale(2); }
   #menu-4 a {
-    padding: 1rem; }
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.9); }
 
 #menu-5 {
   font-size: 2.2rem;
@@ -584,7 +586,6 @@ p {
   #menu-5 li {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.9);
-    color: #eee;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.9);
     transition: transform .2s ease-out; }
@@ -593,6 +594,7 @@ p {
       transform: scale(1.5);
       border: 1px solid #fff; }
   #menu-5 a {
+    color: white;
     display: block;
     padding: .8rem 2.2rem; }
 
@@ -617,7 +619,7 @@ p {
     display: inline-block;
     margin: 2rem 3rem; }
   #menu-6 a {
-    color: #fff;
+    color: white;
     transition: .1s;
     text-shadow: 0 0 1rem #FF5722, 0 0 0.1rem #FF5722, 0 0 0.5rem #FF5722, 0 0 5rem #FF5722, 0 0 2rem #FF5722; }
   #menu-6 a:hover {
@@ -635,9 +637,8 @@ p {
     padding: 0; }
   #menu-7 a {
     display: block; }
-  #menu-7 li {
-    color: white; }
   #menu-7 a {
+    color: white;
     display: inline-block;
     padding: 1rem 0;
     animation: 2s infinite alternate menu-7-animation; }
@@ -655,9 +656,8 @@ p {
     padding: 0; }
   #menu-8 a {
     display: block; }
-  #menu-8 li {
-    color: white; }
   #menu-8 a {
+    color: white;
     text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 0 0 1rem black; }
     #menu-8 a:hover {
       background-color: black; }
@@ -680,8 +680,6 @@ p {
     padding: 0; }
   #menu-9 a {
     display: block; }
-  #menu-9 li {
-    color: white; }
   #menu-9 a {
     color: white;
     text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, -2px -2px 2rem #ffdb6d, -1px -1px 1rem #ffe7a0, -1px -1px 0.5rem #ffe7a0; }

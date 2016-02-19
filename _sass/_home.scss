@@ -11,16 +11,16 @@
 
 	li{border-bottom: 1px solid #ccc;}
 	li:last-child{border: none;}
-
-	a{
-		display: block;
-		transition: font-size 0.2s ease, background-color 0.2s ease;
-		padding: .5rem;	
-	}
-
 	li:hover{
 		font-size: 3rem;
 		background-color: rgba(0,0,0,.05);
+	}
+
+	a{	
+		color: white;
+		display: block;
+		transition: font-size 0.2s ease, background-color 0.2s ease;
+		padding: .5rem;	
 	}
 
 }
@@ -97,6 +97,7 @@
 
 	a{
 		padding: 1rem;
+		color: $black;
 	}
 
 }
@@ -109,7 +110,6 @@
 	li{
 		display:inline-block;
 		background-color: $black;
-		color: #eee;
 		border-radius: 5px;
 		border: 1px solid $black;
 		transition: transform .2s ease-out;	
@@ -121,7 +121,7 @@
 		}
 	}
 
-	a{
+	a{  color: white;
 		display:block;
 		padding: .8rem 2.2rem;
 	}
@@ -145,7 +145,7 @@
 	}
 
 	a{
-		color: #fff;
+		color: white;
 		transition: .1s;
 		text-shadow: 0 0 1rem $orange, 0 0 .1rem $orange, 0 0 .5rem $orange,
 		0 0 5rem $orange, 0 0 2rem $orange;
@@ -164,9 +164,8 @@
       hsla(0,0%,100%,.06), hsla(0,0%,100%,.06) 15px,
       transparent 0, transparent 30px);
 
-	li{color: white;}
-
 	a{
+		color: white;
 		display: inline-block;
 		padding: 1rem 0;
 		animation: 2s infinite alternate menu-7-animation;
@@ -180,8 +179,8 @@
 	border: 8px solid black;
 	width: auto;
 
-	li{color: white;}
 	a{
+		color: white;
 		text-shadow: text-retro(), 0 0 1rem black;
 		&:hover{background-color: black;}
 	}
@@ -197,7 +196,6 @@ background: linear-gradient(to right, rgba(255,193,7,1) 0%,rgba(255,235,59,1) 10
 	border: 8px solid black;
 	width: auto;
 
-	li{color: white;}
 	a{	color: white;
 		text-shadow: text-retro(black, 4), -2px -2px 2rem lighten($amber, 20%),
 		 -1px -1px 1rem lighten($amber, 30%), -1px -1px .5rem lighten($amber,30%);
