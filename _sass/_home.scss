@@ -85,13 +85,12 @@
 
 	li{
 		transform: rotate(-25deg);
+		-webkit-transform:rotate(-25deg);
 		transition: transform .4s ease;
 
 		&:hover{
 			transform: rotate(-15deg);
-		}
-		&:active{
-			transform: scale(2);
+			-webkit-transform:rotate(-15deg);
 		}
 
 	}
@@ -181,7 +180,6 @@
 	width: auto;
 
 	a{
-		font-family: Helvetica;
 		color: white;
 		text-shadow: text-retro(), 0 0 1rem black;
 		&:hover{background-color: black;}
@@ -201,13 +199,69 @@ background: linear-gradient(to right, rgba(255,193,7,1) 0%,rgba(255,235,59,1) 10
 	
 
 	a{	
-		color: white;		
+		color: white;
+
 		&:hover{
 			text-shadow: text-retro(black, 4), -2px -2px 2rem lighten($amber, 20%),
 		 -1px -1px 1rem lighten($amber, 30%), -1px -1px .5rem lighten($amber,30%);
 			background-color: black;}
 	}
 }
+
+#menu-10{
+	@include menu;
+	max-width: 60rem;
+	margin: 0 auto;
+	height: 200px;
+	text-align: center;
+	
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	li{border-bottom: 1px solid #ccc;}
+	li:last-child{border: none;}
+	li:hover{
+		font-size: 3rem;
+		animation: 1.5s infinite alternate menu-10-animation;
+	}
+
+	a{	
+		color: black;
+		display: block;
+		transition: font-size 0.2s ease, background-color 0.2s ease;
+		padding: .5rem;	
+	}
+}
+
+#menu-11{
+	@include menu;
+	max-width: 60rem;
+	margin: 0 auto;
+	height: 200px;
+	text-align: center;
+	
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	li{border-bottom: 1px solid #ccc;}
+	li:last-child{border: none;}
+	li:hover{
+		animation: .8s ease-out infinite alternate menu-10-animation;
+	}
+
+	a{	
+		color: black;
+		display: block;
+		padding: .5rem;	
+	}
+
+
+}
+
 
 // border: 1em solid transparent;
 // 	background: linear-gradient(white, white) padding-box,

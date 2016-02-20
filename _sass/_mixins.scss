@@ -23,19 +23,28 @@
         $shadows: append($shadows, 
             ($i*1px) ($i*1px) $color, comma);
         }
-    @return $shadows;
-
-    
+    @return $shadows;   
 }
 
-.spacer{
-    height: 10rem;
-    width: auto;
+@keyframes menu-10-animation{
+    0% {
+        background: lighten($cyan, 52%); 
+    }
+
+    100% {
+        background: lighten($cyan, 56%);
+    }
 }
 
-.floats{
-    @include clearfix;
-}
+
+
+
+
+
+
+
+
+.floats{@include clearfix;}
 
 
 

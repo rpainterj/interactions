@@ -368,10 +368,11 @@ html {
     margin-left: 0; }
   to {
     margin-left: .4rem; } }
-.spacer {
-  height: 10rem;
-  width: auto; }
-
+@keyframes menu-10-animation {
+  0% {
+    background: #defbff; }
+  100% {
+    background: #f3feff; } }
 .floats::after {
   clear: both;
   content: "";
@@ -567,11 +568,11 @@ p {
     display: block; }
   #menu-4 li {
     transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
     transition: transform .4s ease; }
     #menu-4 li:hover {
-      transform: rotate(-15deg); }
-    #menu-4 li:active {
-      transform: scale(2); }
+      transform: rotate(-15deg);
+      -webkit-transform: rotate(-15deg); }
   #menu-4 a {
     padding: 1rem;
     color: rgba(0, 0, 0, 0.9); }
@@ -660,7 +661,6 @@ p {
   #menu-8 a {
     display: block; }
   #menu-8 a {
-    font-family: Helvetica;
     color: white;
     text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 0 0 1rem black; }
     #menu-8 a:hover {
@@ -689,5 +689,61 @@ p {
     #menu-9 a:hover {
       text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, -2px -2px 2rem #ffdb6d, -1px -1px 1rem #ffe7a0, -1px -1px 0.5rem #ffe7a0;
       background-color: black; }
+
+#menu-10 {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 200px;
+  text-align: center; }
+  #menu-10 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-10 a {
+    display: block; }
+  #menu-10 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-10 li {
+    border-bottom: 1px solid #ccc; }
+  #menu-10 li:last-child {
+    border: none; }
+  #menu-10 li:hover {
+    font-size: 3rem;
+    animation: 1.5s infinite alternate menu-10-animation; }
+  #menu-10 a {
+    color: black;
+    display: block;
+    transition: font-size 0.2s ease, background-color 0.2s ease;
+    padding: .5rem; }
+
+#menu-11 {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 200px;
+  text-align: center; }
+  #menu-11 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-11 a {
+    display: block; }
+  #menu-11 ul {
+    margin: 0;
+    padding: 0; }
+  #menu-11 li {
+    border-bottom: 1px solid #ccc; }
+  #menu-11 li:last-child {
+    border: none; }
+  #menu-11 li:hover {
+    animation: .8s ease-out infinite alternate menu-10-animation; }
+  #menu-11 a {
+    color: black;
+    display: block;
+    padding: .5rem; }
 
 /*# sourceMappingURL=main.css.map */
