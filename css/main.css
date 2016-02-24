@@ -483,6 +483,9 @@ p {
 .nav-active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.9); }
 
+.body-text a {
+  color: black; }
+
 #menu-1 {
   font-size: 2.2rem;
   max-width: 60rem;
